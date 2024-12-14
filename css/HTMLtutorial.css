@@ -1,0 +1,43 @@
+
+
+body {
+    line-height: 1.8;
+    
+    margin: 0;
+    background: linear-gradient(135deg, #ff9a9e, #fad0c4, #fbc2eb);
+    color: #333;
+}
+nav {
+    background: linear-gradient(90deg, #8e44ad, #c0392b);
+    color: #fff;
+    padding: 15px;
+    text-align: center;
+
+}
+nav a {
+    color: #fff;
+    margin: 0 15px;
+    text-decoration: none;
+    font-size: 1em;
+}
+section {
+    padding: 10px;
+    margin: 10px;
+    border-radius: 10px;
+    background: rgba(255, 255, 255, 0.8);
+
+}
+section p{
+    padding-right: 50px;
+
+}
+section h2 {
+    color: #8e44ad;
+}
+footer {
+    text-align: center;
+    padding: 10px;
+    background: #8e44ad;
+    color: #fff;
+    margin-top: 20px;
+}
