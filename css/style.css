@@ -1,4 +1,4 @@
-/* استایل اصلی */
+
 body {
     background-color: #fdf6f9; 
     color: #333;
@@ -11,19 +11,24 @@ header {
     text-align: center;
     box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
 }
-
+@font-face {
+    font-family: vazirmatn;
+    src: url(/assets/webfonts/Vazirmatn-Regular.woff2) format("woff2");
+}
 header h1 {
-    margin: 0;
     color: #6d3a5e; 
     font-size: 2.5rem;
+    font-family: vazirmatn;
 }
 
 nav ul li {
     display: inline;
+    font-weight: 900;
+    font-family: vazirmatn;
 }
 
 nav ul li a {
-    text-decoration: none; /* حذف خط زیرش */
+    text-decoration: none; /* برای حذف خط زیرش */
     color: #6d3a5e;
     padding: 10px 15px;
     border-radius: 5px;
@@ -33,6 +38,7 @@ nav ul li a {
 nav ul li a:hover {
     background-color: #f4b6cc; 
     color: white;
+    font-family: vazirmatn;
 }
 
 
@@ -50,14 +56,16 @@ nav ul li a:hover {
     color: #6d3a5e;
     font-size: 2rem;
     margin-bottom: 20px;
+    font-family: vazirmatn;
 }
 
 .intro p {
     margin-bottom: 20px;
     color: #555;
+    font-family: vazirmatn;
 }
 
-.cta-button {
+.button {
     display: inline-block;
     padding: 15px 25px;
     background-color: #f4b6cc;
@@ -66,9 +74,9 @@ nav ul li a:hover {
     border-radius: 5px;
     box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
     transition: background-color 0.3s ease, transform 0.3s ease;
+    font-family: vazirmatn;
 }
-
-.cta-button:hover {
+.button:hover {
     background-color: #e895b5; 
     transform: scale(1.05);
 }
@@ -80,4 +88,50 @@ footer {
     margin-top: 20px;
     font-size: 1rem;
     color: #6d3a5e;
+    font-family: vazirmatn;
+}
+body {
+    line-height: 1.8;
+    
+    margin: 0;
+    background: linear-gradient(135deg, #ff9a9e, #fad0c4, #fbc2eb);
+    color: #333;
+    font-family: vazirmatn;
+}
+
+nav {
+    background: linear-gradient(90deg, #8e44ad, #c0392b);
+    color: #fff;
+    padding: 15px;
+    text-align: center;
+
+}
+nav a {
+    color: #fff;
+    margin: 0 15px;
+    text-decoration: none;
+    font-size: 1em;
+}
+
+section {
+    padding: 10px;
+    margin: 10px;
+    border-radius: 10px;
+    background: rgba(255, 255, 255, 0.8);
+    
+}
+section p{
+    padding-right: 50px;
+
+}
+section h2 {
+    color: #8e44ad;
+    
+}
+footer {
+    text-align: center;
+    padding: 10px;
+    background: #8e44ad;
+    color: #fff;
+    margin-top: 20px;
 }
