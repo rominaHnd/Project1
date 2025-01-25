@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>تمرینات کدنویسی</title>
+  <link rel="stylesheet" href="/assets/css/style.css">
+  <link rel="stylesheet" href="/assets/vendor/fontawesome/css/all.min.css">
+  <link rel="icon" itype="png" href="/assets/images/icon.png">
+
+  <style>
+.projects-section {
+    width: 100vw;
+    height: 500px;
+    padding-top: 150px;
+     text-align: center;
+}
+
+.projects-section h2 {
+  font-size: 36px;
+  margin-bottom: 30px;
+  color: #325173;
+}
+
+.project-container {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.project {
+  background-color: rgba(182, 135, 167, 0.1);
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 350px;
+  height: 200px;
+  margin: 20px;
+  padding: 20px;
+  text-align: center;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.project:hover {
+    transform: scale(1.05);
+}
+.project h3 {
+  font-size: 22px;
+  margin-bottom: 15px;
+}
+.project p {
+  font-size: 14px;
+  color: #555;
+  margin-bottom: 20px;
+}
+.project button {
+  background-color: #480e39;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 4px;
+}
+.project button:hover {
+  background-color: #0056b3;
+}
+.project.easy {
+  border-left: 7px solid #28a745;
+}
+.project.medium {
+  border-left:7px solid #ffc107;
+}
+.project.hard {
+  border-left: 7px solid #dc3545;
+}
+  </style>
+</head>
+<body>
+    <div class="background"></div>
+    <section class="projects-section">
+        <h2>پروژه‌های کدنویسی</h2>
+        <div class="project-container">
+          <div class="project easy">
+            <h3>پروژه آسان</h3>
+            <p>ساخت یک صفحه ساده با HTML و CSS</p>
+            <button>حل تمرین</button>
+          </div>
+          <div class="project medium">
+            <h3>پروژه متوسط</h3>
+            <p>ایجاد فرم ثبت‌نام با اعتبارسنجی در جاوااسکریپت</p>
+            <button>حل تمرین</button>
+          </div>
+          <div class="project hard">
+            <h3>پروژه سخت</h3>
+            <p>ساخت یک وب اپلیکیشن با React و APIهای خارجی</p>
+            <button>حل تمرین</button>
+          </div>
+        </div>
+      </section>
+    
+      <footer class="footer" >
+        <div class="footer-logo">
+            <img src="/assets/images/logo.png" alt="لوگوی سایت">
+        </div>
+        <div class="footer-about">
+            <p>با ما در شبکه‌های اجتماعی همراه باشید:</p>
+            <div class="social-icons">
+                <a href="#" target="_blank"><i class="fab fa-instagram"></i></a>
+                <a href="#" target="_blank"><i class="fab fa-twitter"></i></a>
+                <a href="#" target="_blank"><i class="fab fa-facebook"></i></a>
+                <a href="#" target="_blank"><i class="fab fa-linkedin"></i></a>
+            </div>
+        </div>
+        <div class="footer-location">
+            <i class="fas fa-map-marker-alt"></i>
+            <p>     هرجا که شما باشید!</p>
+        </div>
+    </footer>
+    </body>
+    </html>
+  

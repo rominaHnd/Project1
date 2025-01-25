@@ -1,0 +1,165 @@
+    <!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>آموزش CSS</title>
+    <link rel="stylesheet" href="/assets/vendor/fontawesome/css/all.min.css">
+    <link rel="stylesheet" href="/assets/css/style.css">
+    <link rel="icon" type="image/png" href="/assets/images/icon.png">
+    <style>
+    ul {
+        list-style: disc outside;
+    }
+    
+    li {
+        display: list-item; 
+        margin-bottom: 10px;
+    }
+    </style>
+</head>
+<body class="cssbody">
+<header class="CssHeader">
+    <h1>آموزش جامع   CSS</h1>
+</header>
+
+<div class="CssContainer">
+    <div class="CssSection" id="intro"style="padding-right: 20px;" > 
+        <h2>مقدمه‌ای بر CSS</h2>
+        <p>CSS (Cascading Style Sheets) زبانی است که به شما امکان می‌دهد ظاهر صفحات وب را طراحی و بهبود بخشید. با استفاده از CSS می‌توانید رنگ‌ها، فونت‌ها، فاصله‌ها، اندازه‌ها و چینش عناصر را به صورت دقیق کنترل کنید.</p>
+        <p>CSS نقش حیاتی در تجربه کاربری وبسایت‌ها دارد و به شما اجازه می‌دهد طراحی‌های زیبا و واکنش‌گرا ایجاد کنید.</p>
+    </div>
+    <div class="CssSection" id="selectors" style="padding-right: 20px;">
+        <h2>انتخابگرها در CSS</h2>
+        <p>انتخابگرها در CSS ابزارهایی برای انتخاب عناصر HTML هستند. هر انتخابگر روشی برای هدف‌گذاری عناصر خاص ارائه می‌دهد.</p>
+        <p><strong>انواع رایج انتخابگرها:</strong></p>
+        <ul >
+            <li ><strong>انتخابگر تگ:</strong> انتخاب تمام عناصر با یک تگ خاص (<code>div</code>, <code>p</code>).</li>
+            <li ><strong>انتخابگر کلاس:</strong> انتخاب عناصر با کلاس مشخص (<code>.myClass</code>).</li>
+            <li ><strong>انتخابگر آی‌دی:</strong> انتخاب یک عنصر خاص با شناسه (<code>#myId</code>).</li>
+            <li ><strong>انتخابگر فرزند:</strong> انتخاب عناصری که مستقیماً داخل عنصر دیگری هستند (<code>ul > li</code>).</li>
+        </ul>
+        <p><strong>مثال:</strong></p>
+        <div class="code-example">
+            <pre style="direction: ltr;">
+/* انتخاب همه پاراگراف‌ها */
+p {
+    color: blue;
+}
+
+/* انتخاب عنصر با شناسه مشخص */
+#header {
+    background-color: lightgray;
+}
+
+/* انتخاب عناصر با کلاس خاص */
+.button {
+    padding: 10px;
+    background-color: purple;
+    color: white;
+}
+            </pre>
+        </div>
+    </div>
+    <div class="CssSection" id="colors"style="padding-right: 20px;">
+        <h2>رنگ‌ها و پس‌زمینه‌ها</h2>
+        <p>با CSS می‌توانید رنگ متن، رنگ پس‌زمینه و حتی تصاویر پس‌زمینه را تنظیم کنید.</p>
+        <ul >
+            <li><strong>رنگ متن:</strong> <code>color</code></li>
+            <li><strong>رنگ پس‌زمینه:</strong> <code>background-color</code></li>
+            <li><strong>تصاویر پس‌زمینه:</strong> <code>background-image</code></li>
+        </ul>
+        <p><strong>مثال:</strong></p>
+        <div class="code-example">
+            <pre style="direction: ltr;">
+/* تنظیم رنگ متن */
+h1 {
+    color: #d084d9;
+}
+
+/* تنظیم رنگ پس‌زمینه */
+body {
+    background-color: #f8e7fc;
+}
+
+/* تنظیم تصویر پس‌زمینه */
+header {
+    background-image: url('header-bg.jpg');
+    background-size: cover;
+    background-position: center;
+}
+            </pre>
+        </div>
+    </div>
+    <div id="box-model"  style="padding-right: 20px;">
+        <h2>مدل جعبه‌ای (Box Model)</h2>
+        <p>مدل جعبه‌ای نشان‌دهنده ساختار فضایی هر عنصر در صفحه وب است و شامل موارد زیر است:</p>
+        <ul class="CssUl">
+            <li><strong>محتوا:</strong> محتوای داخلی عنصر (مانند متن یا تصویر).</li>
+            <li><strong>پدینگ:</strong> فاصله بین محتوا و مرز عنصر.</li>
+            <li><strong>مرز:</strong> خط دور عنصر.</li>
+            <li><strong>مارجین:</strong> فاصله بین عناصر مختلف.</li>
+        </ul>
+        <p><strong>مثال:</strong></p>
+        <div class="code-example">
+            <pre style="direction: ltr;">
+div {
+    width: 300px;
+    padding: 20px;
+    border: 5px solid #ff8cc6;
+    margin: 15px;
+}
+            </pre>
+        </div>
+    </div>
+
+    <div class="CssSection" id="positioning"style="padding-right: 20px;" >
+        <h2>نمایش و موقعیت‌دهی</h2>
+        <p>CSS به شما اجازه می‌دهد موقعیت و نمایش عناصر را مدیریت کنید.</p>
+        <ul>
+            <li><strong>موقعیت‌دهی استاتیک:</strong> موقعیت پیش‌فرض عناصر.</li>
+            <li><strong>موقعیت‌دهی نسبی:</strong> بر اساس موقعیت عادی عنصر.</li>
+            <li><strong>موقعیت‌دهی مطلق:</strong> بر اساس والد نزدیک.</li>
+            <li><strong>موقعیت‌دهی ثابت:</strong> نسبت به کل صفحه.</li>
+        </ul>
+        <p><strong>مثال:</strong></p>
+        <div class="code-example">
+            <pre style="direction: ltr;">
+/* موقعیت‌دهی نسبی */
+div {
+    position: relative;
+    top: 20px;
+    left: 10px;
+}
+
+/* موقعیت‌دهی مطلق */
+header {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+            </pre>
+        </div>
+    </div>
+</div>
+
+<footer class="footer">
+    <div class="footer-logo">
+        <img src="/assets/images/logo.png" alt="لوگوی سایت">
+    </div>
+    <div class="footer-about">
+        <p>با ما در شبکه‌های اجتماعی همراه باشید:</p>
+        <div class="social-icons">
+            <a href="#" target="_blank"><i class="fab fa-instagram"></i></a>
+            <a href="#" target="_blank"><i class="fab fa-twitter"></i></a>
+            <a href="#" target="_blank"><i class="fab fa-facebook"></i></a>
+            <a href="#" target="_blank"><i class="fab fa-linkedin"></i></a>
+        </div>
+    </div>
+    <div class="footer-location">
+        <i class="fas fa-map-marker-alt"></i>
+        <p>     هرجا که شما باشید!</p>
+    </div>
+</footer>
+</body>
+</html>

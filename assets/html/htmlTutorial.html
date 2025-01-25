@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>آموزش HTML</title>
+    <link rel="icon" itype="png" href="/assets/images/icon.png">
+    <link rel="stylesheet" href="/assets/css/style.css">
+</head>
+<body id="learn-html">
+    <div class="htmlItems">
+        <p> برای باز کردن هربخش از آموزش کلیک کنید</p>
+        <a href="#intro">معرفی HTML</a>
+        <a href="#structure">ساختار یک سند HTML</a>
+        <a href="#basic-elements">عناصر پایه HTML</a>
+        <a href="#text">کار با متن‌ها</a>
+        <a href="#media">تصاویر و رسانه‌ها</a>
+        <a href="#tables">جداول</a>
+        <a href="#forms">فرم‌ها</a>
+    </div>
+
+    <section id="intro">
+        <h2>معرفی HTML</h2>
+        <p>HTML مخفف HyperText Markup Language است و زبان اصلی برای ایجاد ساختار صفحات وب محسوب می‌شود.</p>
+        
+    </section>
+ 
+
+    <section id="structure">
+        <h2>ساختار یک سند HTML</h2>
+        
+        <p>ساختار یک سند HTML شامل تگ‌های <code>&lt;html&gt;</code>, <code>&lt;head&gt;</code>, و <code>&lt;body&gt;</code> است.</p>
+        <p>سند HTML باید با <code>&lt;!DOCTYPE html&gt;</code> آغاز شود تا نوع HTML مشخص شود.</p>
+        <p>تگ‌های اصلی:</p>
+        <ul>
+            <li><code>&lt;html&gt;</code>: شروع سند HTML.</li>
+            <li><code>&lt;head&gt;</code>: شامل اطلاعات متا، عنوان صفحه و لینک به فایل‌های CSS یا JavaScript.</li>
+            <li><code>&lt;body&gt;</code>: شامل محتوای قابل مشاهده صفحه.</li>
+        </ul>
+        
+    </section>
+
+    <section id="basic-elements">
+        <h2>عناصر پایه HTML</h2>
+        <p>
+            تگ‌های <code>&lt;h1&gt;</code> تا <code>&lt;h6&gt;</code> برای ایجاد عناوین.
+            <br>
+            <i><b>متن ها:</b></i> تگ‌هایی مانند <code>&lt;p&gt;</code> برای پاراگراف‌ها و <code>&lt;b&gt;</code> و <code>&lt;i&gt;</code> برای تغییر ظاهر متن.
+        </p>
+        <p>
+            تصاویر و رسانه‌ها: تگ‌هایی مثل <code>&lt;img&gt;</code> و <code>&lt;video&gt;</code> برای اضافه کردن تصاویر و ویدئوها.
+            <br>
+            <i><b>لینک ها:</b></i> تگ <code>&lt;a&gt;</code> برای ایجاد لینک‌ها.
+        </p>
+        <p>
+            <i><b>جداول:</b></i> استفاده از <code>&lt;table&gt;</code> برای نمایش داده‌ها به صورت جدول.
+            <br>
+            <i><b>فرم ها:</b></i> تگ‌هایی مثل <code>&lt;form&gt;</code>، <code>&lt;input&gt;</code> و <code>&lt;textarea&gt;</code> برای دریافت ورودی کاربران.</p>
+           <p> لینک‌ها با استفاده از تگ &lt;a&gt; ایجاد می‌شوند.</p>
+    
+    </section>
+
+    <section id="text">
+        <h2>کار با متن‌ها</h2>
+        <p>با استفاده از تگ‌هایی مانند <code>&lt;b&gt;</code> و <code>&lt;i&gt;</code> می‌توان متن‌ها را فرمت کرد.</p>
+    </section>
+
+    <section id="media">
+        <h2>تصاویر و رسانه‌ها</h2>
+       <h3>اضافه کردن عکس</h3> 
+        <p>برای اضافه کردن عکس در HTML از تگ &lt;img&gt; استفاده می‌شود. این تگ یک تگ خودبسته 
+            است (نیازی به تگ پایانی ندارد) و دارای چندین ویژگی (Attributes)  است:</p>
+            <pre>
+        ویژگی‌ها:
+        src: مسیر فایل عکس را مشخص می‌کند.  URL باشد.
+        alt: توضیحی برای عکس است که اگر عکس لود نشود، نمایش داده می‌شود.
+        width و height: اندازه عکس را تعیین می‌کنند (  پیکسل ).
+            </pre>
+    <hr>
+    <h3>اضافه کردن ویدئو  </h3>
+    <p>
+        برای اضافه کردن ویدئو از تگ &lt;video&gt; استفاده می‌شود. این تگ نیاز به تگ پایانی دارد و 
+            معمولاً دارای ویژگی‌ها و تنظیماتی مثل کنترل پخش است.  
+    </p>
+    <pre>
+        ویژگی‌ها:
+         controls: دکمه‌های کنترل پخش (مثل پخش، مکث و صدا) را اضافه می‌کند.
+         width و height: ابعاد ویدئو را تنظیم می‌کنند.
+         &lt;source&gt;: مسیر فایل ویدئو و نوع آن را مشخص می‌کند.         
+    </pre>
+    </section>
+
+    <section id="tables">
+        <h2>جداول</h2>
+        <h3>ساختار کلی جدول</h3>
+        <p>برای ایجاد یک جدول از تگ &lt;table&gt; استفاده می‌شود. این تگ شامل چندین تگ فرعی
+             است که برای بخش‌بندی جدول به کار می‌روند:</p>
+        <pre>
+        &lt;table&gt;: تگ اصلی جدول.
+        &lt;tr&gt;: هر ردیف جدول را تعریف می‌کند.
+        &lt;td&gt;: هر سلول داده‌ای را درون یک ردیف مشخص می‌کند.
+        &lt;th&gt;: سلول‌های عنوان یا سرستون را مشخص می‌کند .
+        </pre>
+        <style>
+            table {
+                width: 80%;
+                border-collapse: collapse;
+                margin: 20px auto;
+            }
+            th, td {
+                border: 1px solid #ddd;
+                padding: 8px;
+                text-align: center;
+            }
+            th {
+                background-color: #f4f4f4;
+                font-weight: bold;
+            }
+            tr:nth-child(even) {
+                background-color: #f9f9f9;
+            }
+            tr:hover {
+                background-color: #f1f1f1;
+            }
+        </style>
+        
+        <table>
+            <tr>
+                <th>نام</th>
+                <th>سن</th>
+                <th>شغل</th>
+            </tr>
+            <tr>
+                <td>X</td>
+                <td>25</td>
+                <td>برنامه‌نویس</td>
+            </tr>
+            <tr>
+                <td>Y</td>
+                <td>30</td>
+                <td>طراح</td>
+            </tr>
+        </table>
+        <p>
+            گاهی نیاز دارید که چند سلول را در یک ردیف یا ستون با هم ترکیب کنید. برای این کار از ویژگی‌های colspan و rowspan استفاده می‌شود.  </p>
+            <pre>
+                مثال:
+            colspan="2": ترکیب دو ستون در یک سلول.
+            rowspan="2": ترکیب دو ردیف (اگر بخواهید سلولی در دو ردیف امتداد داشته باشد).
+
+            </pre>
+    </section>
+
+    <section id="forms">
+        <h2>فرم‌ها</h2>
+        
+        <p>فرم‌ها برای دریافت اطلاعات کاربر به‌کار می‌روند و شامل تگ‌هایی مانند <code>&lt;form&gt;</code>, <code>&lt;input&gt;</code>, و <code>&lt;textarea&gt;</code> هستند.</p>
+        <p>
+            فرم‌ها در HTML به شما امکان می‌دهند اطلاعات را از کاربر دریافت کرده و به سرور ارسال کنید. 
+            هر فرم با استفاده از تگ <strong>form</strong> ایجاد می‌شود که شامل ویژگی‌های زیر است:
+            <br>
+            <strong>action:</strong> مسیر یا URL مقصدی که داده‌های فرم باید به آن ارسال شوند.
+            <br>
+            <strong>method:</strong> مشخص‌کننده روش ارسال داده‌ها. دو مقدار اصلی آن:
+            <em>GET</em> (ارسال داده‌ها در URL) و <em>POST</em> 
+        </p>
+        <p>
+            برای دریافت ورودی از کاربران، می‌توانید از تگ‌های متنوعی استفاده کنید:
+            <br>
+            - <strong>input:</strong> ورودی متنی، گذرواژه، ایمیل، تاریخ، و غیره.
+            <br>
+            - <strong>textarea:</strong> برای متن‌های طولانی.
+            <br>
+            - <strong>select:</strong> برای ایجاد منوهای کشویی.
+            <br>
+            - <strong>button:</strong> برای ارسال یا ریست کردن فرم.
+        </p>
+        <p>برای اضافه کردن مقدار راهنما و اجباری کردن پر کردن فیلدهای فرم، از ویژگی‌های placeholder و required در تگ‌های HTML استفاده می‌کنیم. : </p>
+
+        <p>
+            به عنوان مثال، فرم زیر شامل فیلدهای نام، ایمیل، و یک دکمه ارسال است:
+        </p>
+        <form action="/submit" method="POST" style="background: #f9f9f9; padding: 15px; border-radius: 8px; max-width: 400px;">
+            <label for="name">نام:</label><br>
+            <input type="text" id="name" name="name" placeholder="نام خود را وارد کنید" style="width: 100%; margin-bottom: 10px; padding: 8px;"><br>
+            <label for="email">ایمیل:</label><br>
+            <input type="email" id="email" name="email" placeholder="ایمیل خود را وارد کنید" style="width: 100%; margin-bottom: 10px; padding: 8px;"><br>
+            <button type="submit" style="background: #8e44ad; color: #fff; border: none; padding: 10px 20px; border-radius: 5px;">ارسال</button>
+        </form>
+
+    </section>
+    <footer class="footer">
+        <div class="footer-logo">
+            <img src="/assets/images/logo.png" alt="لوگوی سایت">
+        </div>
+        <div class="footer-about">
+            <p>با ما در شبکه‌های اجتماعی همراه باشید:</p>
+            <div class="social-icons">
+                <a href="#" target="_blank"><i class="fab fa-instagram"></i></a>
+                <a href="#" target="_blank"><i class="fab fa-twitter"></i></a>
+                <a href="#" target="_blank"><i class="fab fa-facebook"></i></a>
+                <a href="#" target="_blank"><i class="fab fa-linkedin"></i></a>
+            </div>
+        </div>
+        <div class="footer-location">
+            <i class="fas fa-map-marker-alt"></i>
+            <p>     هرجا که شما باشید!</p>
+        </div>
+    </footer>
+
+</body>
+</html>
